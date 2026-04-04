@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "defaultMode": "dontAsk"
+  },
+  "mcpServers": {
+    "playwright-body": {
+      "command": "node",
+      "args": [
+        "./browser-mcp/index.js"
+      ]
+    }
+  }
+}

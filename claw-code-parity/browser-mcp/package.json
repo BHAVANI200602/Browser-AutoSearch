@@ -1,0 +1,14 @@
+{
+  "name": "browser-mcp",
+  "version": "1.0.0",
+  "description": "Playwright MCP Server for Browser Automation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "playwright": "^1.42.1"
+  }
+}
