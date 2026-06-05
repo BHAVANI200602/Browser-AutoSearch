@@ -1,0 +1,17 @@
+# 1. Use Microsoft's official Playwright image (matches Node v20/v22 ecosystems)
+FROM ://microsoft.com
+
+# 2. Set the working directory inside the container
+WORKDIR /usr/app
+
+# 3. Copy package management files
+COPY package*.json ./
+
+# 4. Install all dependencies (including devDependencies like tsx/typescript)
+RUN npm ci
+
+# 5. Copy the rest of your application code
+COPY . .
+
+# 6. Run your agent script directly using tsx (handles TypeScript instantly)
+CMD ["npx", "tsx", "agent.ts"]

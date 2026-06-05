@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Local Environment Secrets
+.env
+.env.*
+!.env.example
+
+# Local Logs and Screenshots
+logs/
+*.log
+screenshots/
+
+# OS Clutter
+.DS_Store
+Thumbs.db
