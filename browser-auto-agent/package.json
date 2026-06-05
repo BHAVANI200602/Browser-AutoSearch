@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":       "npx tsx agent.ts",
+    "add-cred":    "npx tsx add-credential.ts",
+    "typecheck":   "npx tsx --version && echo OK",
+    "clean-logs":  "node -e \"require('fs').readdirSync('logs').filter(f=>f.endsWith('.json')).forEach(f=>require('fs').unlinkSync('logs/'+f))\""
   },
   "keywords": [],
   "author": "",
