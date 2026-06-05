@@ -11,6 +11,19 @@ logs/
 *.log
 screenshots/
 
+# Playwright artifacts
+playwright-report/
+test-results/
+
+# Build artifacts
+dist/
+build/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
 # OS Clutter
 .DS_Store
 Thumbs.db
